@@ -1,4 +1,6 @@
 defmodule Dots do
+  def setup_files, do: setup_files Path.join(System.user_home, "dot_files")
+
   def setup_files(path) do
     file_paths = path
     |> Path.join("dot_*")
